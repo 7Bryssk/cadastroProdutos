@@ -1,15 +1,15 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {SimplePageComponent} from './simple-page.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { SimplePageComponent } from './simple-page.component';
 
 const routes: Routes = [
   {
     path: '',
     component: SimplePageComponent,
     data: {
-      title: 'Sample Page',
+      title: 'Home',
       icon: 'icon-layout-sidebar-left',
-      caption: 'lorem ipsum dolor sit amet, consectetur adipisicing elit - sample page',
+      caption: 'sample home page',
       status: true
     }
   }

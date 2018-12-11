@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {AdminComponent} from './layout/admin/admin.component';
-import {AuthComponent} from './layout/auth/auth.component';
+import { AdminComponent } from './layout/admin/admin.component';
 
 const routes: Routes = [
   {
@@ -10,24 +9,22 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'simple-page',
+        redirectTo: 'produtos',
         pathMatch: 'full'
       },
       {
         path: 'simple-page',
         loadChildren: './theme/simple-page/simple-page.module#SimplePageModule'
+      },
+      {
+        path: 'produtos',
+        loadChildren: './produtos/produtos.module#ProdutosModule'
       }
     ]
   },
   {
-    path: '',
-    component: AuthComponent,
-    children: [
-      {
-        path: 'coming-soon',
-        loadChildren: './theme/coming-soon/coming-soon.module#ComingSoonModule'
-      }
-    ]
+    path: '**',
+    redirectTo: ''
   }
 ];
 

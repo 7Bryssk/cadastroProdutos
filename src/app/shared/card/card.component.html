@@ -10,8 +10,8 @@
         <li *ngIf="!isCardToggled" (click)="toggleCardOption()"><i class="feather open-card-option icon-chevron-left"></i></li>
         <li><i class="feather {{ fullCardIcon }} full-card" (click)="fullScreen($event)"></i></li>
         <li><i class="feather minimize-card icon-minus" appCardToggleEvent (click)="toggleCard($event)"></i></li>
-        <li><i class="feather icon-refresh-cw reload-card" (click)="cardRefresh($event)" ></i></li>
-        <li><i class="feather icon-trash close-card" (click)="closeCard($event)"></i></li>
+        <li><i class="feather icon-refresh-cw reload-card" (click)="cardRefresh($event)"></i></li>
+        <li><i class="feather icon-trash close-card" *ngIf="closedCard" (click)="closeCard($event)"></i></li>
         <li *ngIf="isCardToggled" (click)="toggleCardOption()"><i class="feather open-card-option icon-x"></i></li>
       </ul>
     </div>

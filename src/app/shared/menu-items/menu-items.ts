@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 
 export interface BadgeItem {
   type: string;
@@ -37,17 +37,26 @@ const MENUITEMS = [
       {
         state: 'simple-page',
         short_label: 'S',
-        name: 'Sample Page',
+        name: 'Home',
         type: 'link',
         icon: 'feather icon-file'
       },
       {
-        state: 'coming-soon',
-        short_label: 'CS',
-        name: 'Coming Soon',
-        type: 'link',
+        state: 'produtos',
+        short_label: 'P',
+        name: 'Produtos',
+        type: 'sub',
         icon: 'feather icon-watch',
-        target: true
+        children: [
+          {
+            state: 'consulta',
+            name: 'Consulta'
+          },
+          {
+            state: 'cadastro',
+            name: 'Cadastro'
+          }
+        ]
       }
     ]
   }
