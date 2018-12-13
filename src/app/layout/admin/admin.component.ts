@@ -180,7 +180,7 @@ export class AdminComponent implements OnInit, OnDestroy {
     this.layoutType = 'light'; // light(default) dark(dark)
 
     this.headerTheme = 'theme1'; // theme1(default)
-    this.pcodedHeaderPosition = 'fixed';
+    this.pcodedHeaderPosition = 'relative';
 
     this.headerFixedTop = 'auto';
 
