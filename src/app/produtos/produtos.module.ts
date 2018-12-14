@@ -8,6 +8,11 @@ import { ManterProdutosComponent } from './manter-produtos/manter-produtos.compo
 import { TextMaskModule } from 'angular2-text-mask';
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { ArchwizardModule } from 'ng2-archwizard';
+
+import { UiSwitchModule } from 'ng2-ui-switch';
+import { TagInputModule } from 'ngx-chips';
 
 @NgModule({
   imports: [
@@ -18,6 +23,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TextMaskModule,
     ReactiveFormsModule,
     FormsModule,
+    UiSwitchModule,
+    TagInputModule,
+    NgxDatatableModule,
+    ArchwizardModule
   ],
   providers: [
 

@@ -41,8 +41,7 @@ const routes: Routes = [
           title: 'Cadastrar Produto',
           icon: 'icon-layout-sidebar-left',
           caption: 'lorem ipsum dolor sit amet, consectetur adipisicing elit - sample page',
-          status: true,
-          novo: true
+          status: true
         }
       },
       {
